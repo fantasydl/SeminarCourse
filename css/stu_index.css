@@ -1,0 +1,143 @@
+aside{
+	float: left;
+	margin: 10px 20px;
+	width: 240px;
+}
+aside h3{
+	margin-top: 10px;
+	padding: 5px 0;
+	color: #fff;
+	background: linear-gradient(to bottom,#086ed5,#055db5);
+	border-width: 3px 3px 0 3px;
+	border-style: solid;
+	border-color: #ababab;
+	border-radius: 4px 4px 0 0;
+	text-align: center;
+}
+aside dl{
+	border: 1px solid #90ABC6;
+	border-radius: 0 0 4px 4px;
+}
+aside dl dt{
+	padding: 0 4px;
+	font-size: 17px;
+	font-weight: bold;
+}
+aside dl dd{
+	padding: 1px 7px;
+	border-bottom: 1px solid #90ABC6;
+	text-indent: 1em;
+}
+.notification,.signon{
+	float: left;
+	margin: 20px 10px 20px 10px;
+	width: 450px;
+	border: 5px solid #ababab;
+	border-radius: 15px;
+}
+.srcollTitle,.signTitle{
+	background: linear-gradient(to bottom,#086ed5,#055db5);
+	border-radius: 8px 8px 0 0;
+}
+.srcollTitle h3,.signTitle h3{
+	display: inline-block;
+	padding-left: 30px;	 
+	height: 55px;
+	font-size: 26px;
+	color: #fff;
+	line-height: 55px;	
+	overflow: hidden; 
+}
+.srcollTitle a{
+	float: right;
+	color: #fff;
+	font-size: 13px;
+	margin-top: 33px;
+	margin-right: 15px;
+}
+.srcollTitle a:hover{
+	text-decoration: underline;	
+}
+.scrollBox {
+	margin-left: 25px;
+	margin-top: 10px;
+	height: 144px;
+	width: 380px;
+	overflow: hidden;   
+}
+.scrollBox ul li{
+	height: 24px;
+}
+.scrollBox ul li a{
+	display: block;
+	float: left;
+	width: 250px;
+	height: 24px;	
+	font-size: 15px;
+	text-indent: 15px;
+	overflow: hidden;
+}
+.scrollBox ul li a:hover{
+	color: #055db5;
+}
+.scrollBox ul li span{
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
+.signon{
+	margin-top: 0px;
+}
+.signon table{
+	width: 100%;
+}
+.signon table thead tr td{
+	width: 33.33%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+.signon table tbody tr td{
+	text-align: center;
+}
+#miss{
+	position: relative;
+	cursor: pointer;
+}
+#miss:hover #detail{
+	display: block;
+}
+#detail{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	width: 120px;
+	border: 2px solid #ababab;
+	border-radius: 4px;
+	text-align: center;
+}
+#detail:before,#detail:after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+#detail:before{
+	top: -29px;
+	left: 33px;
+	border-width: 15px;
+	border-style: solid;
+	border-color: transparent transparent #ababab transparent;
+}
+#detail:after{
+	top: -24px;
+	left: 35px;
+	border-width: 12px;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+}
+#detail ul li span{
+	color: #999;
+	font-size: 12px;
+}

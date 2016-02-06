@@ -1,22 +1,25 @@
 table { 
  	border-collapse:collapse; 
  	border-spacing:0; 
+ 	width: 100%;
 } 
 tr,td { 
  	padding: 0; 
 }
-aside,.main{
-	float: left;
-	margin: 20px 20px;
-}
-aside h3{
-	text-align: center;
-}
-aside img{
-	width: 70px;
+.title{
 	margin-top: 10px;
-	margin-left: 25%;
-	margin-bottom: 10px;
+	width: 100%;
+	background: linear-gradient(to bottom,#086ed5,#055db5);
+	border-radius: 4px 4px 0 0;
+}
+.title h3{
+	margin-bottom: 5px;
+	padding-left: 10px;	 
+	height: 45px;
+	font-size: 24px;
+	color: #fff;
+	line-height: 45px;	
+	overflow: hidden; 
 }
 .table tbody tr{
 	line-height: 30px;
@@ -41,12 +44,21 @@ aside img{
 	font-weight: 600;
 	line-height: 30px;
 }
-td:first-of-type{
-	border-left: 0;
+.fname{
+	width: 45%;
 }
-.main h2{
-	margin-bottom: 20px;
+.fperson{
+	width: 30%;
 }
-#choose{
+td:last-of-type{
+	width: 10%;
+	text-align: center;
+	border-right: 1px solid #90ABC6;
+}
+td span{
+	color: #999;
+	font-size: 12px;
+}
+#download{
 	padding: 4px 10px;
 }
