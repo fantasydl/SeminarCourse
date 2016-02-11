@@ -25,9 +25,9 @@ function rThis(event){
 		val = target.nextSibling.nextSibling.innerHTML;
 	aText.value = "回复" + val + "：";
 	if(checkScrollH()){
-		var clientH = document.documentElement.clientHeight + document.body.scrollTop,
+		var clientH = document.documentElement.clientHeight,
 			scrollH = document.body.scrollHeight,
-			targetH = scrollH - clientH - 5;
+			targetH = scrollH - clientH - 3;
 		scrollUp(targetH);
 	}
 }
@@ -35,7 +35,6 @@ function rThis(event){
 function checkScrollH(){
 	var clientH = document.documentElement.clientHeight + document.body.scrollTop,
 		scrollH = document.body.offsetHeight;
-	console.log(clientH + "" + scrollH);
 	return scrollH > clientH ? true : false;
 }
 
