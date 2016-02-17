@@ -14,13 +14,19 @@ window.onload = function(){
 	var tRows = getElementsByClass('row-title');
 		
 	for(var i = 0,l = tRows.length;i < l;i++){
-		tRows[i].onclick = function(){
+		tRows[i].onclick = function(event){
+			event = event || window.event;
 			var target = this.nextSibling.nextSibling;
 			if(target.style.display === "block"){
 				target.style.display = "none";
 			}else{
 				target.style.display = "block";
 			}
+			if(event.stopPropagation){
+            	event.stopPropagation();
+            }else{
+            	event.cancelBubble=true;
+            }
 		}
 	}
 }

@@ -21,6 +21,25 @@ tr,td {
 	line-height: 45px;	
 	overflow: hidden; 
 }
+.newFile{
+	margin-bottom: 5px;
+	padding-left: 5px;
+	height: 30px;	
+	line-height: 30px;
+}
+.newFile input{
+	width: 400px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.newFile a{
+	display: inline-block;
+	margin-left: 10px;
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
 .table tbody tr{
 	line-height: 30px;
 	border-top: 1px solid #90ABC6;

@@ -26,6 +26,12 @@
 	color: #fff;
 	background: linear-gradient(to bottom,#ababab,#69939b);
 }
+.container #new{
+	float: right;
+	margin-right: 5px;
+	padding: 0 5px;
+	height: 30px;
+}
 section{
 	width: 100%;
 }
@@ -57,4 +63,50 @@ section{
 }
 #homework{
 	display: none;
+}
+.modal{
+	position: absolute;
+	display: none;
+	left: 450px;
+	top: 50px;
+	padding: 10px 20px;
+	width: 300px;
+	height: 200px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 4px #ccc;
+}
+.modal h2{
+	margin-bottom: 5px;
+}
+.modal input{
+	margin-bottom: 5px;
+}
+.modal input[type=text]{
+	display: block;
+	width: 260px;
+	height: 25px;
+}
+.modal input[type=radio]{
+	margin-left: 20px;
+}
+.modal textarea{
+	margin: 5px 0;
+	width: 260px;
+	height: 50px;
+	max-width: 260px;
+	max-height: 50px;
+}
+.modal button{
+	margin:0 35px;
+	width: 50px;
+	height: 30px;
+}
+.modal a{
+	display: inline-block;
+	margin:0 35px;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
 }
