@@ -29,4 +29,39 @@ window.onload = function(){
             }
 		}
 	}
+
+	var inPuts = document.getElementsByTagName('input');
+
+	for(var i = 0,l = inPuts.length;i < l;i++){
+		inPuts[i].onclick = function(event){
+			event = event || window.event;
+			if(event.stopPropagation){
+            	event.stopPropagation();
+            }else{
+            	event.cancelBubble=true;
+            }
+		}
+	} 
+
+	var looks = getElementsByClass('choose-stu')[0].getElementsByTagName('a');
+
+	for(var i = 0,l = looks.length;i < l;i++){
+		looks[i].onclick = function(){
+			var cStu = getElementsByClass('choose-stu')[0],
+				sDetail = getElementsByClass('stu-detail')[0];
+
+			cStu.style.display = "none";
+			sDetail.style.display = "block";
+		}
+	}
+
+	var tReturn = document.getElementById('return');
+
+	tReturn.onclick = function(){
+		var cStu = getElementsByClass('choose-stu')[0],
+			sDetail = getElementsByClass('stu-detail')[0];
+
+		cStu.style.display = "block";
+		sDetail.style.display = "none";
+	}
 }

@@ -22,68 +22,93 @@
 				</ul>
 			</nav>
 			<button class="btn" id="quitButton" type="button">退出</button>
-            <p>Welcome!<strong id="user_name">钱超</strong></p>
+            <p>Welcome!<strong id="user_name">曹旻</strong></p>
 		</header>
 		<div class="container">
 			<h1>研讨作品</h1>
-			<section>
-				<div class="row">
-					<div class="row-title">第一次研讨
-						<form>
-							<input type="file">
-							<button class="btn">下载</buttton>
-						</form>
+			<div class="choose-stu" style="display:block;">
+				<table>
+					<thead>
+						<tr>
+							<td>学号</td>
+							<td>姓名</td>
+							<td>上传次数</td>
+							<td>缺少次数</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>12121296</td>
+							<td>钱超</td>
+							<td>2</td>
+							<td>8</td>
+							<td><a href="javascript:;" class="btn">查看</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="stu-detail" style="display:none;">
+				<a href="javascript:;" id="return">&lt;&lt; return</a>
+				<section>
+					<div class="row">
+						<div class="row-title">第一次研讨
+							<form>
+								<button class="btn">保存</button>
+								<button class="btn">下载</buttton>
+							</form>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<td>表现</td>
+									<td>内容</td>
+									<td>PPT</td>
+									<td>总分</td>
+									<td>点评</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<table>
-						<thead>
-							<tr>
-								<td>表现</td>
-								<td>内容</td>
-								<td>PPT</td>
-								<td>总分</td>
-								<td>点评</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>30</td>
-								<td>20</td>
-								<td>20</td>
-								<td>70</td>
-								<td>不错继续努力。</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="row">
-					<div class="row-title">第二次研讨
-						<form>
-							<input type="file">
-							<button class="btn">下载</buttton>
-						</form>
+					<div class="row">
+						<div class="row-title">第二次研讨
+							<form>
+								<button class="btn">保存</button>
+								<button class="btn">下载</buttton>
+							</form>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<td>表现</td>
+									<td>内容</td>
+									<td>PPT</td>
+									<td>总分</td>
+									<td>点评</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+									<td><input type="text"></td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
-					<table>
-						<thead>
-							<tr>
-								<td>表现</td>
-								<td>内容</td>
-								<td>PPT</td>
-								<td>总分</td>
-								<td>点评</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>25</td>
-								<td>25</td>
-								<td>20</td>
-								<td>70</td>
-								<td>不错继续努力。</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</section>
+				</section>
+			</div>
 		</div>
 	</body>
 </html>
