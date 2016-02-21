@@ -20,6 +20,24 @@ tr,td{
 	background: linear-gradient(to bottom,#086ed5,#055db5);
 	border-radius: 4px 4px 0 0;
 }
+.container ul{
+	width: 100%;
+	margin: 2px 0;
+}
+.container ul li{
+	display: inline-block;
+}
+.container ul li a{
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	line-height: 30px;
+}
+.selected{
+	color: #fff;
+	background: linear-gradient(to bottom,#ababab,#69939b);
+}
 .container table{
 	font-size: 14px;
 	line-height: 20px;
@@ -41,4 +59,33 @@ tr,td{
 }
 .container table tbody td a{
 	padding: 5px 10px;
+}
+section{
+	width: 100%;
+}
+.row{
+	margin-bottom: 7px;
+	width: 100%;
+	border: 2px solid #ababab;
+}
+.row-title{
+	padding-left: 20px;
+	height: 30px;
+	font-size: 17px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.row-title span{
+	float: right;
+	margin-right: 30px;
+	color: #999;
+	font-size: 13px;
+}
+.row article{
+	display: none;
+	padding: 5px 7px;
+	font-size: 14px;
+	line-height: 20px;
+	text-indent: 2em;
+	border-top: 1px solid #ababab;
 }

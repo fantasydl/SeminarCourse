@@ -24,28 +24,40 @@
 			<button class="btn" id="quitButton" type="button">退出</button>
             <p>Welcome!<strong id="user_name">曹旻</strong></p>
 		</header>
-		<div class="container">
+		<div id="main" class="container">
 			<h1>签到记录</h1>
-			<table>
-				<thead>
-					<tr>
-						<td>学号</td>
-						<td>姓名</td>
-						<td>签到次数</td>
-						<td>缺勤次数</td>
-						<td></td>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>12121296</td>
-						<td>钱超</td>
-						<td>2</td>
-						<td>2</td>
-						<td><a href="javascript:;" class="btn">查看详细</a></td>
-					</tr>
-				</tbody>
-			</table>
+			<ul>
+				<li class="selected"><a href="javascript:;">学生详情</a></li>
+				<li><a href="javascript:;">课程详情</a></li>
+			</ul>
+			<section id="students">
+				<table>
+					<thead>
+						<tr>
+							<td>学号</td>
+							<td>姓名</td>
+							<td>签到次数</td>
+							<td>缺勤次数</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>12121296</td>
+							<td>钱超</td>
+							<td>2</td>
+							<td>2</td>
+							<td><a href="javascript:;" class="btn">查看详细</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section id="lessons" style="display:none;">
+				<div class="row">
+					<div class="row-title">第一次课缺勤<span>2016-03-11</span></div>
+					<article class="row-article">钱超，许谦，包承鸣</article>
+				</div>
+			</section>
 		</div>
 	</body>
 </html>
