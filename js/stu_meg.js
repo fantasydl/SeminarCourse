@@ -16,6 +16,8 @@ window.onload = function(){
 		for(var i = 0,l = aThis.length;i < l;i++){
 			aThis[i].onclick = rThis;
 		}
+		// var bThis = getElementsByClass('answerThis','main')[getElementsByClass('answerThis','main').length - 1];
+		// bThis.onclick = rThis;
 	}
 }
 
