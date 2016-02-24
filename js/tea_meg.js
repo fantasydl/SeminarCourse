@@ -8,6 +8,24 @@ window.onload = function(){
 	for(var i = 0,l = dThis.length;i < l;i++){
 		dThis[i].onclick = cThis;
 	}
+	var newFloors = document.getElementById('newFloor');
+	newFloors.onclick = function(event){
+		event.preventDefault();
+		var mMain = document.getElementById('main');
+		var ansText = document.getElementById('ansText');
+		var user = document.getElementById('user_name');
+		var sumFloor = getElementsByClass('floor').length+1;
+		var newNode = '<div class="floor"><aside><img src="images/headshow.jpg"><span>'+ user.innerHTML + '</span></aside><article>' + ansText.value + '</article><a class="answerThis" href="javascript:;">回复</a><a class="deleteThis" href="javascript:;">删除</a><span class="floorNum">' + sumFloor +'楼</span><span class="floorTime">2016-02-01</span><div class="clear"></div></div>'
+		mMain.innerHTML += newNode;
+		var aThis = getElementsByClass('answerThis','main');
+		for(var i = 0,l = aThis.length;i < l;i++){
+			aThis[i].onclick = rThis;
+		}
+		var dThis = getElementsByClass('deleteThis','main');
+		for(var i = 0,l = dThis.length;i < l;i++){
+			dThis[i].onclick = cThis;
+		}
+	}
 }
 
 function getElementsByClass(clsName,parent){
@@ -57,6 +75,7 @@ function scrollUp(targeth){
 }
 
 function cThis(event){
+	debugger;
 	event = event || window.event;
 	var target = event.target || event.srcElement,
 		mMain = document.getElementById('main'),
